@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* reset  by Eric Meyer's */
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+/* reset  by Eric Meyer's */
+
+
+
+
+
+/* ===========global style ===============================================================================*/
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.container{
+	max-width: 1600px;
+	margin: 0 auto;	
+}
+/* ===========global style ===============================================================================*/
+
+
+
+
+/* ===========header style ========================================================================*/
+header{
+	background: #D8D8D8;
+	position: absolute;
+    width: 100%;	
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.64em 0.8em;
+    font-size: 14px;
+}
+.logo{
+	cursor: pointer;
+	width: 14.6em;
+}
+.nav{
+	display: flex;
+    justify-content: center;
+	font-weight: 500;
+	font-size: 1.43em;
+    line-height: 1.2em;
+}
+.nav_links{
+	margin: 0 1.34em;
+}
+.languges{
+	font-weight: 600;
+}
+.languges a{
+	margin: 0 10px;
+}
+/* ===========header style end ========================================================================*/
+
+
+
+
+
+/* ==================hero_window ==================*/
+
+.hero_img{
+	background-image: url(./img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+    width: 100%;
+}
+.b_img{
+	height: 100vh;
+}
+.hero_main{
+	width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero_wrapper{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-size: 14px;	
+}
+.hero_btext{
+	font-weight: bold;
+	font-size: 1.78em;
+    line-height: 2.14em;
+    text-transform: uppercase;
+	z-index: 1;
+}
+.hero_stext{
+    font-size: 1.42em;
+    line-height: 1.71em;
+	z-index: 1;	
+}
+.hero_phone{
+	font-weight: bold;
+	font-size: 1.43em;
+	line-height: 1.19em;
+	margin: 2.99em 0 0;
+	z-index: 1;
+}
+.hero_white{
+	position: absolute;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) -19%, #FFFFFF 100%, rgba(255, 255, 255, 0) 0);
+    width: 100%;
+    height: 224px;
+    top: 0;
+}
+
+/* ==================hero_window ================== */
+
+
+
+/* ==================price======================= */
+.price{
+	height: 100vh;
+}
+.price_main{
+	top: 21.3333%;
+}
+.price_text{
+	font-size: 14px;
+}
+.price_item{
+	font-weight: bold;
+    font-size: 18px;
+    line-height: 153.9%;
+    margin: 30px 0 0;
+}
+.duo{
+	position: absolute;
+    width: 100%;
+    top: 45%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.duo_text{
+	font-size: 2.85em;
+}
+.ytext{
+	color: #FAC509;
+}
+.btext{
+	font-weight: bold;
+	line-height: 153.9%;	
+}
+.stext{
+	font-size: 0.46em;
+	line-height: 153.9%;
+	color: #c4c4c4;
+	text-align: center;
+}
+.price_textb{
+	position: absolute;
+    width: 100%;
+    height: 224px;
+    top: 40%;
+    background: #E5E5E5;
+}
+.price_info{
+	position: absolute;
+    width: 60%;
+    top: 70%;
+    font-size: 18px;
+    left: 20%;
+}
+.hero_wrapper h1{
+	font-weight: bold;
+	font-size: 3em;
+    line-height: 1.12em;
+    text-transform: uppercase;
+	position: relative;
+}
+.hero_wrapper h1::after{
+	position: absolute;
+	content: '';
+	border: 3px solid #FAC509;
+	width: 128px;
+	bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero_wrapper span{
+	color: #FAC509;
+}
+
+/* ==================price end======================= */
+
+
+/*============================== art_one================================= */
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hall{
+	padding: 10em 0 0;
+    font-size: 14px;
+}
+.hall_title{
+	text-align: center;
+    font-weight: bold;
+	font-size: 3em;
+    line-height: 1.21em;
+    padding: 0 0 0.78em 0;
+    text-transform: uppercase;	
+}
+.hall_general{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hall_gallery{
+	width: 50%;
+}
+.hall_text{
+	font-weight: 500;
+	font-size: 1.42em;
+    line-height: 1.2em;
+    width: 50%
+}
+.text_item{
+	margin: 0 0 2.01em 3.01em;
+    line-height: 1.76em;
+}
+
+
+/* First the Grid */
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
+	grid-gap: 0.5rem;
+	justify-items: center;
+	margin: 0;
+	padding: 0;
+  }
+    
+  /* The Images */
+  .gallery-img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	transition: opacity 0.25s ease-in-out;
+  }
+  
+  .gallery-img:hover {
+	opacity: .7;
+  }
+
+  .btn{
+	margin: 70px 0 0 60px;
+  }
+  .button{
+	width: 215px;
+    height: 58px;
+    border: 1px solid #FAC509;
+    background: #FAC509;
+    border-radius: 35px;
+    padding: 16px 36px;
+    font-weight: 500;
+  }
+/*============================== art_one end================================= */
+
+
+/* ==============================callback and book==============================  */
+.callback{
+    font-size: 14px;
+	padding-top: 7.28em;
+    display: flex;
+    justify-content: space-between;	
+}
+.callback_left{
+    margin: 0 1.428em 0 0;
+	width: 50%;
+}
+.callback_right{
+	width: 100%;
+}
+.callback_right .map{
+	position: relative;
+    padding-bottom: 56.2%;
+}
+.callback_right .map iframe{
+	border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.item_title{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.14em;
+    line-height: 2.64em;
+	margin-bottom: 10%;
+	position: relative;
+}
+.item_title::after{
+	position: absolute;
+    content: '';
+    border: 3px solid #FAC509;
+    width: 128px;
+	left: 5%;
+    bottom: 7px;
+    transform: translateX(-9%);
+}
+.item_text{
+	line-height: 1.19em;
+    font-size: 1.43em;
+    margin: 0 0 1.49em 0;
+}
+.phone{
+	margin: 1.78em 0;
+}
+.phone a{
+	font-weight: 600;
+    font-size: 1.92em;
+    line-height: 1.22em;
+    color: #FAC509;
+}
+.item_textb{
+	font-weight: 600;
+    font-size: 1.42em;
+    line-height: 1.2em;	
+}
+.item_texts{
+    font-size: 1.43em;
+    line-height: 1.71em;
+    margin: 1.02em 0 0.5em;	
+}
+.item_textm{
+	font-weight: 500;
+	font-size: 1.42em;
+    line-height: 1.74em;	
+}
+
+
+/* ==============================end of callback and book style==============================  */
+
+
+/* ==============================style for form============================= */
+#contact-wrapper{
+	display: flex;
+	justify-content: center;
+}
+.form{
+	display: flex;
+    flex-direction: column;
+}
+.form label{
+	margin: 0.62em 0 0.62em;
+}
+.form label strong{
+	font-weight: 600;
+	font-size: 1.07em;
+    line-height: 2.33em;
+}
+.form input{
+	font-size: 1.14em;
+    height: 2.5em;
+    width: 22.055em;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    padding: 7px 0;
+    transition: border-color 0.2s;
+	outline: none;
+	text-align: center;
+}
+.form textarea{
+	border: none;
+    resize: none;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    outline: none;
+	font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.error{
+	font-style: inherit;
+    font-size: 12px;
+}
+.submit{
+	border: 2px solid #FAC509;
+    background: #FAC509;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.admin_panel{
+	padding: 150px 10px;
+}
+table, td, th {  
+	border: 1px solid #ddd;
+	text-align: left;
+  }
+  
+  table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 15px;
+  }
+
+  th {
+	  font-weight: bold;
+  }
+
+
+
+/* ==============================end of style for form============================= */
+
+
+
+/* ========================media queries================== */
+/* max-w1600 */
+@media (max-width: 1600px) {
+	.header{
+		font-size: 13px;
+		padding: 1.64em 1em;
+	}
+	.callback{
+		margin: 0 2.5em;
+	}
+	.callback_left{
+		font-size: 12px;
+	}
+	.text_item{
+		margin: 0 2.01em 2.01em 3.01em;
+	}
+}
+@media (max-width:1400px) {
+
+}
+@media (max-width:1360px) {
+	
+}
+@media (max-width:1280px) {
+	
+}
+@media (max-width:1200px) {
+	.callback{
+		flex-direction: column;
+	}
+	.callback_left{
+		font-size: 10px;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	.item_title{
+		margin-bottom: 3%;
+	}
+	.item_title::after{
+		left: 44%;
+	}
+	.form input{
+		height: 0.5em;
+		width: 100%;
+	}
+}
+@media (max-width:1024px) {
+	.header{
+		font-size: 10px;
+		padding: 1.64em 1em;
+	}
+	.gallery-grid{
+		grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+	}
+	.hall_gallery{
+		padding-left: 1.07em;
+	}
+}
+@media (max-width:960px) {
+	.header{
+		font-size: 8px;
+	}
+	.hall{
+		padding: 5em 0 0;
+	}
+	.hall_text{
+		width: 100%;
+	}
+	.hall_general{
+		flex-direction: column;
+		width: 95%;
+    	margin: 0 auto;
+	}
+	.hall_gallery{
+		width: 100%;
+		padding: 0;
+	}
+	.gallery-grid{
+		grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));
+	}
+	.text_item{
+		margin: 1.01em 0 0 0;
+	}
+	.btn{
+		margin: 0.9em 0 0 0px;
+	}
+	.form label{
+		margin: 0.2em 0 0.2em;
+	}
+	.form textarea{
+		font-size: 1.14em;
+	}
+}
+@media (max-width:768px) {
+	
+}
+@media (max-width:560px) {
+	
+}
+@media (max-width:430px) {
+	.header{
+		font-size: 7px;
+	}
+	.nav{
+		display: block;
+	}
+	.hero_wrapper{
+		text-align: center;
+	}
+	.hall{
+		padding: 10em 0 0;
+		font-size: 10px;
+	}
+	.duo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		top: 41%;
+	}
+	.price_info{
+		width: 90%;
+    	text-align: center;
+    	left: 5%;
+	}
+	.item_title::after{
+		left: 35%;
+	}
+	.callback_right{
+		align-items: center;
+    	text-align: center;
+	}
+	.form input{
+		width: 75%;
+    	margin: 0 auto;
+	}
+	.form textarea{
+		width: 75%;
+    	margin: 0 auto;
+	}
+	.hall_text{
+		text-align: center;
+	}
+	.callback_right .map iframe{
+		position: inherit;
+	}
+}
+
+
+
+/* ========================media queries================== */
+
+.dropbtn {
+	background: #D8D8D8;
+	padding-right: 80px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block; margin-top: 16px;}
